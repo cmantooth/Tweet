@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     
-    return render_template('index.html')
+    return render_template('index.html',my_arg='I like instagram better')
 
     # if request has args (?tweet=some_tweet)
     if request.args:
